@@ -21,16 +21,33 @@ a:hover, a:active, a:focus {
 }
 
 h1 {
-	font-size:21px;
+	font-size:30px;
 	text-transform:capitalize;
 	font-weight:bold;
 	text-align:center;
 	color:#555;
 	margin-bottom:20px;
+	display:inline-block;
+}
+
+h1:before {
+	background:url('../img/logo-ekascope.svg') left top no-repeat;
+	width:70px;
+	height:70px;
+	background-size: contain;
+	content: '\20';
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+	padding-right: 100px;
+	border-right: #ccc 1px solid;
 }
 
 #container {
 	padding:30px 25px;
+	max-width:800px;
+	width:100%;
+	margin:0 auto;
 }
 
 #player {
@@ -97,4 +114,11 @@ p.description {
 .on-air span:before {
 	content: '\002b24';
 	margin-right:5px;
+}
+
+/* player dimensions */
+.player-dimensions {
+	max-width:800px;
+	width:100%;
+	height:360px;
 }
