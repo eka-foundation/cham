@@ -26,10 +26,11 @@ h1 {
 	font-weight:bold;
 	text-align:center;
 	color:#555;
+	margin-bottom:20px;
 }
 
 #container {
-	padding:50px 25px;
+	padding:30px 25px;
 }
 
 #player {
@@ -41,4 +42,27 @@ p.description {
 	margin:30px auto 0 auto;
 	width:100%;
 	max-width:640px;
+}
+
+#status {
+	text-align: center;
+}
+
+#status img {
+	max-width: 800px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.off-air {
+	max-width: 800px;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+       background: #e00000 url(../img/icon-waiting.svg) 10px center no-repeat;
+    background-size: contain;
+    color: #fff; 
+    padding: 5px 20px 5px 40px;
+    text-transform: uppercase;
 }
