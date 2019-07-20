@@ -44,11 +44,11 @@ p.description {
 	max-width:640px;
 }
 
-#status {
+#status-off-air {
 	text-align: center;
 }
 
-#status img {
+#status-off-air img {
 	max-width: 800px;
     width: 100%;
     display: block;
@@ -60,9 +60,41 @@ p.description {
     display: inline-block;
     margin: 20px auto;
     text-align: center;
-       background: #e00000 url(../img/icon-streaming.svg) 10px center no-repeat;
+    background: #464646 url(../img/icon-streaming.svg) 10px center no-repeat;
     background-size: contain;
     color: #fff; 
     padding: 5px 20px 5px 40px;
     text-transform: uppercase;
+}
+
+#status-on-air {
+	display:none;
+	text-align:center;
+}
+
+.on-air {
+	max-width: 800px;
+	display: inline-block;
+	margin: 20px auto;
+	text-align: center;
+	font-weight:bold;
+	font-size:13px;
+	line-height: 13px;
+}
+.on-air span {
+	font-weight:bold;
+	text-transform: uppercase;
+	padding: 3px 5px 2px 5px;
+	color: #e00000;
+	border: #e00000 1px solid;
+	border-radius: 5px;
+	font-size: 10px;
+	line-height: 10px;
+	margin-right:5px;
+	vertical-align: middle;
+}
+
+.on-air span:before {
+	content: '\002b24';
+	margin-right:5px;
 }

@@ -27,13 +27,13 @@
     <video-js id="player" class="vjs-default-skin" controls preload="auto" width="640" height="268">
       <!-- <source src="/hls/stream.m3u8" type="application/x-mpegURL"> -->
     </video-js>
-    <div id="status">
+    <div id="status-off-air">
       <img src="img/off-air.png" alt="Off Air">
-      <p class="off-air">No stream available now</p>
-    </div>
-    <p class="description">
-      Karsha Gompa Live Stream. 
-    </p>
+      <p class="off-air">No stream available</p>
+    </div><!--status-off-air-->
+    <div id="status-on-air">
+      <p class="on-air"><span>LIVE</span> Streaming now!</p>
+    </div><!--status-on-air-->
   </div><!--container-->
   <script src="js/video.js"></script>
   <script src="js/videojs-http-streaming.js"></script>
@@ -64,7 +64,8 @@
   }
 
   function showVideo() {
-    document.getElementById('status').style.visibility = 'hidden';
+    document.getElementById('status-off-air').style.display = 'none';
+    document.getElementById('status-on-air').style.display = 'block';
     var player = videojs('#player', {
       autoplay: true,
       html5: {
